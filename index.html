@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOT Survey form</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./main.css" type="text/css" media="all" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">Survey form</h1>
+            <p id="description" class="description text-center">
+                The next survey form is about Game of Thrones Series, if do are you
+                loved this serie you should answer the next form
+            </p>
+        </header>
+
+        <form id="survey-form">
+            <!--Principal data-->
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" required
+                    placeholder="Enter your e-mail" />
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" name="age" id="number" class="form-control" min="18" max="99" required
+                    placeholder="Enter your age" />
+            </div>
+
+            <!-- About job-->
+            <div class="form-group">
+                <label for="select" id="select-label">Your job</label>
+                <select name="job" id="dropdown" class="form-control">
+                    <option value="none">None</option>
+                    <option value="student">Student</option>
+                    <option value="developer">Software developer</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="architect">Architect</option>
+                    <option value="police">Police</option>
+                </select>
+            </div>
+
+            <!-- About if the serie liked -->
+            <div class="form-group">
+                <p>Dou you really like GOT?</p>
+                <label>
+                    <input type="radio" name="like" id="radio-yes" class="input-radio" value="yes" />
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="like" id="radio-no" class="input-radio" value="no" />
+                    No
+                </label>
+                <label>
+                    <input type="radio" name="like" id="radio-maybe" class="input-radio" value="maybe" />
+                    Maybe
+                </label>
+            </div>
+
+            <!-- About the houses-->
+            <div class="form-group">
+                <p>Which house would you like to belong to?</p>
+                <label for="">
+                    <input type="radio" name="house" id="radio" class="input-radio" value="dragons" />
+                    Targaryen
+                </label>
+                <label for="">
+                    <input type="radio" name="house" id="radio" class="input-radio" value="wolfs" />
+                    Stark
+                </label>
+                <label for="">
+                    <input type="radio" name="house" id="radio" class="input-radio" value="leons" />
+                    Lannister
+                </label>
+            </div>
+
+            <!-- About the characters -->
+            <div class="form-group">
+                <p>Select you favorites characters</p>
+                <label><input type="checkbox" name="character" class="input-checkbox" value="dani" />
+                    Dayneris</label>
+                <label><input type="checkbox" name="character" class="input-checkbox" value="jhon" />
+                    Jhon Snow</label>
+                <label><input type="checkbox" name="character" class="input-checkbox" value="nothing" />
+                    Nothing</label>
+                <label><input type="checkbox" name="character" class="input-checkbox" value="ned" />
+                    Ned Stark</label>
+                <label><input type="checkbox" name="character" class="input-checkbox" value="sersi" />
+                    Sersei Lannister</label>
+            </div>
+
+            <!-- About the respondent-->
+            <div class="form-group">
+                <label for="comments">Your comments</label>
+                <textarea name="comments" id="comments" class="input-textarea" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
